@@ -1,13 +1,7 @@
 #!/bin/bash
 
 cd ~
-mkdir FreeplayGBAcm3
 git clone https://github.com/julenvitoria/FreeplayGBAcm3
-cd FreeplayGBAcm3
-crontab mycron
-cp emulators.cfg /opt/retropie/configs/all
-
-
 mkdir -p "/home/pi/RetroPie/retropiemenu/Actualizar-Addons"
 cp /home/pi/FreeplayGBAcm3/Update.sh "/home/pi/RetroPie/retropiemenu/Actualizar-Addons/Update.sh"
 
