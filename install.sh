@@ -2,7 +2,7 @@
 
 
 cd ~
-#git clone https://github.com/julenvitoria/FreeplayGBAcm3
+git clone https://github.com/julenvitoria/FreeplayGBAcm3
 mkdir /home/pi/RetroPie/retropiemenu/Actualizar-Addons
 cp /home/pi/FreeplayGBAcm3/Update.sh /home/pi/RetroPie/retropiemenu/Actualizar-Addons
 chmod +x /home/pi/RetroPie/retropiemenu/Actualizar-Addons/Update.sh
