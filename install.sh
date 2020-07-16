@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 cd ~
 git clone https://github.com/julenvitoria/FreeplayGBAcm3
 mkdir /home/pi/RetroPie/retropiemenu/Actualizar-Addons
