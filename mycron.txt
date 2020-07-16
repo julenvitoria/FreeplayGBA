@@ -1,1 +1,0 @@
-@reboot /usr/bin/nice -n 19 sudo python /home/pi/temperatureMonitor/tempMonitor.py &
