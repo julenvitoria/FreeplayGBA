@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 cd ~
 mkdir FreeplayGBAcm3
 git clone https://github.com/julenvitoria/FreeplayGBAcm3
