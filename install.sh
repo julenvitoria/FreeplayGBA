@@ -2,11 +2,16 @@
 
 cd ~
 git clone https://github.com/julenvitoria/FreeplayGBAcm3
-if grep -q "Update Addons" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
-        echo "Directory update addons was created yet"
+if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
+        echo "Directory update addons was created yet."
 else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
+#if grep -q "Update Addons" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
+#        echo "Directory update addons was created yet"
+#else
+#        mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
+#fi
 #mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 cp /home/pi/FreeplayGBAcm3/Update.sh /home/pi/RetroPie/retropiemenu/Update-Addons
 #cp /home/pi/FreeplayGBAcm3/ActualizarSistema.sh /home/pi/RetroPie/retropiemenu/Update-Addons
