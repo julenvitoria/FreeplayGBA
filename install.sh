@@ -25,7 +25,7 @@ else
         sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/UpdateUpgradeSystem.sh</path>\n\t\t<name>Update and Upgrade System</name>\n\t\t<desc>Script for Update and Upgrade System automatically</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
 #Update Emulators.cfg
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3-Emulators.cfg/master/emulators.cfg>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateEmulators.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3-Emulators.cfg/master/UpdateEmulators.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateEmulators.sh
 if grep -q "UpdateEmulators.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "Update Emulators is in the gamelist.xml yet"
 else
