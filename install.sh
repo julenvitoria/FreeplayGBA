@@ -16,7 +16,7 @@ fi
 cp /home/pi/FreeplayGBAcm3/Update.sh /home/pi/RetroPie/retropiemenu/Update-Addons
 #cp /home/pi/FreeplayGBAcm3/ActualizarSistema.sh /home/pi/RetroPie/retropiemenu/Update-Addons
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/Update.sh
-curl https://github.com/julenvitoria/FreeplayGBA-UpdateUpgradeSystem/raw/master/UpdateUpgradeSystem.sh -o /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateUpgradeSystem.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-UpdateUpgradeSystem/master/UpdateUpgradeSystem.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateUpgradeSystem.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateUpgradeSystem.sh
 if grep -q "Update Addons" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "Update Addons is in the gamelist.xml yet"
