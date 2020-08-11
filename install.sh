@@ -2,6 +2,7 @@
 
 cd ~
 git clone https://github.com/julenvitoria/FreeplayGBAcm3
+chmod +x ~/FreeplayGBAcm3/multi_switch.sh
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
 else
@@ -23,4 +24,4 @@ if grep -q "Update and Upgrade System" /opt/retropie/configs/all/emulationstatio
 else
         sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/UpdateUpgradeSystem.sh</path>\n\t\t<name>Update and Upgrade System</name>\n\t\t<desc>Script for Update and Upgrade System automatically</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
-
+~/FreeplayGBAcm3/multi_switch.sh --ES-RESTART
