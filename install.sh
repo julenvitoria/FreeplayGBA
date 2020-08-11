@@ -9,8 +9,6 @@ else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3Addons/master/UpdateAddons.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
-#cp /home/pi/FreeplayGBAcm3/Update.sh /home/pi/RetroPie/retropiemenu/Update-Addons
-#cp /home/pi/FreeplayGBAcm3/ActualizarSistema.sh /home/pi/RetroPie/retropiemenu/Update-Addons
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-UpdateUpgradeSystem/master/UpdateUpgradeSystem.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateUpgradeSystem.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateUpgradeSystem.sh
