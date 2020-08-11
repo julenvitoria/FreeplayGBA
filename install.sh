@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cd ~
-git clone https://github.com/julenvitoria/FreeplayGBAcm3
-chmod +x ~/FreeplayGBAcm3/multi_switch.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
+chmod +x ~/scripts/multi_switch.sh
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
 else
