@@ -27,6 +27,7 @@ else
 fi
 #Install Update Emulators.cfg
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3-Emulators.cfg/master/UpdateEmulators.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateEmulators.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateEmulators.sh
 if grep -q "UpdateEmulators.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "Update Emulators is in the gamelist.xml yet"
 else
@@ -35,6 +36,7 @@ fi
 
 #Install Super Retroboy theme and launchings
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-SuperRetroBoyTheme/master/ThemePlusLaunchings.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/ThemePlusLaunchings.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/ThemePlusLaunchings.sh
 if grep -q "ThemePlusLaunchings.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "ThemePlusLaunchings is in the gamelist.xml yet"
 else
