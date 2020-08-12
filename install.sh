@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 cd ~
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
 chmod +x ~/scripts/multi_switch.sh
