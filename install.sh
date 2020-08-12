@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd ~
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
 chmod +x ~/scripts/multi_switch.sh
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
@@ -9,7 +9,7 @@ else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 #Install Update Addons
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAcm3Addons/master/UpdateAddons.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAAddons/master/UpdateAddons.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
 if grep -q "UpdateAddons.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "Update Addons is in the gamelist.xml yet"
