@@ -9,12 +9,12 @@ else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 #Install Update Addons
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/UpdateAddons.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
-chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
-if grep -q "UpdateAddons.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
-        echo "Update Addons is in the gamelist.xml yet"
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/InstallTempIndicator.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
+if grep -q "InstallTempIndicator.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
+        echo "InstallTempIndicator is in the gamelist.xml yet"
 else
-        sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/UpdateAddons.sh</path>\n\t\t<name>Update Addons</name>\n\t\t<desc>Script for la updating options and configs of the image FreeplayGBAcm3</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
+        sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/InstallTempIndicator.sh</path>\n\t\t<name>Update Addons</name>\n\t\t<desc>Script to install temperature indicator. If the temperature exceeds 68 degrees, an icon will appear with the degrees the cpu is at.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
 #Install Update and Upgrade System
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-UpdateUpgradeSystem/master/UpdateUpgradeSystem.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateUpgradeSystem.sh
