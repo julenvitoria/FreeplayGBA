@@ -9,7 +9,7 @@ else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 #Install Update Addons
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBAAddons/master/UpdateAddons.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/UpdateAddons.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateAddons.sh
 if grep -q "UpdateAddons.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "Update Addons is in the gamelist.xml yet"
