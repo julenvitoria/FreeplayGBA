@@ -1,3 +1,7 @@
+#!/bin/bash
+
+clear
+cd ~
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
         echo "Updating Addons Menu..."
