@@ -1,15 +1,3 @@
-#!/bin/bash
-
-clear
-cd ~
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
-chmod +x ~/scripts/multi_switch.sh
-if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
-        echo "Directory update addons was created yet."
-else
-        mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
-fi
-
 #Install Addons Menu Updater
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/InstallTempIndicator.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
