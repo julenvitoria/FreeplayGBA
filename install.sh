@@ -6,6 +6,9 @@ wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi
 chmod +x ~/scripts/multi_switch.sh
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
+        echo "Updating Addons Menu..."
+        sleep 4
+        rm -R /home/pi/RetroPie/retropiemenu/Update-Addons
 else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
