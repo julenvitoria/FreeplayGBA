@@ -7,12 +7,12 @@ chmod +x ~/scripts/multi_switch.sh
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
         echo "Updating Addons Menu..."
-        sleep 4
+        sleep 2
         rm -R /home/pi/RetroPie/retropiemenu/Update-Addons
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 else
         echo "Creatings directory update addons."
-        sleep 4
+        sleep 2
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 
