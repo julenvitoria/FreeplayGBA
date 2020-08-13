@@ -2,6 +2,9 @@
 
 clear
 cd ~
+#Install autoconf.cfg for sound on Mupen64Plus
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/autoconf.cfg>/opt/retropie/configs/all/autoconf.cfg
+#Install multi_switch script
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
 chmod +x ~/scripts/multi_switch.sh
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
