@@ -11,12 +11,12 @@ else
 fi
 
 #Install Addons Menu Updater
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/InstallTempIndicator.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
-chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
-if grep -q "InstallTempIndicator.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
-        echo "InstallTempIndicator is in the gamelist.xml yet"
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/UpdateMenu.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateMenu.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateMenu.sh
+if grep -q "UpdateMenu.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
+        echo "UpdateMenu is in the gamelist.xml yet"
 else
-        sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/InstallTempIndicator.sh</path>\n\t\t<name>Install Temp. Indicator</name>\n\t\t<desc>Script to install temperature indicator. If the temperature exceeds 68 degrees, an icon will appear with the degrees the cpu is at.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
+        sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/UpdateMenu.sh</path>\n\t\t<name>Addons menu update</name>\n\t\t<desc>Script to update addons menu.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
 
 #Install Temperature Indicator
