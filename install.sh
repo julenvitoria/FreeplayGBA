@@ -9,7 +9,10 @@ if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Updating Addons Menu..."
         sleep 4
         rm -R /home/pi/RetroPie/retropiemenu/Update-Addons
+        mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 else
+        echo "Creatings directory update addons."
+        sleep 4
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 
