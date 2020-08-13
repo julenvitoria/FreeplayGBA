@@ -1,7 +1,6 @@
-if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
-        echo "Directory update addons was created yet."
-        echo "Deleting and updating..."
-        rm -R /home/pi/RetroPie/retropiemenu/Update-Addons
+echo "Updating Addons Menu..."
+sleep 4
+rm -R /home/pi/RetroPie/retropiemenu/Update-Addons
 mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 
 #Install Addons Menu Updater
