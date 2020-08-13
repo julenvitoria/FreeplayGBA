@@ -59,5 +59,14 @@ else
         sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/ThemePlusLaunchings.sh</path>\n\t\t<name>SRB theme + Launchings</name>\n\t\t<desc>Script to install Super Retroboy theme from KALEL1981 and launchings per systems.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
 
+#Install N64HDTextures
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-N64HDTextures/master/N64HDTextures.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh
+if grep -q "N64HDTextures.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
+        echo "N64HDTextures is in the gamelist.xml yet"
+else
+        sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/N64HDTextures.sh</path>\n\t\t<name>Install N64 HD Textures</name>\n\t\t<desc>Script to install HD textures used with Mupen64Plus emulator.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
+fi
+
 #Restart EmulationStation
 ~/scripts/multi_switch.sh --ES-RESTART
