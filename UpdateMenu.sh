@@ -7,11 +7,6 @@ else
         mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
 fi
 
-#echo "Updating Addons Menu..."
-#sleep 4
-#rm -R /home/pi/RetroPie/retropiemenu/Update-Addons
-#mkdir /home/pi/RetroPie/retropiemenu/Update-Addons
-
 #Install Addons Menu Updater
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/InstallTempIndicator.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
