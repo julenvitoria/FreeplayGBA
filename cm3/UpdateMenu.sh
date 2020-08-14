@@ -15,7 +15,7 @@ else
 fi
 
 #Install Addons Menu Updater
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/UpdateMenu.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateMenu.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/cm3/UpdateMenu.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/UpdateMenu.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/UpdateMenu.sh
 if grep -q "UpdateMenu.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "UpdateMenu is in the gamelist.xml yet"
