@@ -2,11 +2,28 @@
 
 clear
 cd ~
+#Install subversion (SVN)
+sudo apt update
+sudo apt -y subversion
 #Install autoconf.cfg for sound on Mupen64Plus
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/autoconf.cfg>/opt/retropie/configs/all/autoconf.cfg
+#Create scripts directory
+if [ -d /home/pi/scripts/ ]; then
+        echo "Directory scripts was created yet"
+        sleep 2
+else
+        echo "Creatings scripts directory"
+        sleep 2
+        mkdir /home/pi/scripts/
+fi
 #Install multi_switch script
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
 chmod +x ~/scripts/multi_switch.sh
+
+#Install github-downloader script
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
+chmod +x ~/scripts/multi_switch.sh
+
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
         echo "Updating Addons Menu..."
