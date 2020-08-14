@@ -21,8 +21,8 @@ wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi
 chmod +x ~/scripts/multi_switch.sh
 
 #Install github-downloader script
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
-chmod +x ~/scripts/multi_switch.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/github-downloader.sh>/home/pi/scripts/multi_switch.sh
+chmod +x ~/scripts/github-downloader.sh
 
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
