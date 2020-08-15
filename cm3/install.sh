@@ -6,7 +6,7 @@ cd ~
 sudo apt update
 sudo apt -y subversion
 #Install autoconf.cfg for sound on Mupen64Plus
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/autoconf.cfg>/opt/retropie/configs/all/autoconf.cfg
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-ConfigsRemaps/master/cm3/configs/all/autoconf.cfg>/opt/retropie/configs/all/autoconf.cfg
 #Create scripts directory
 if [ -d /home/pi/scripts/ ]; then
         echo "Directory scripts was created yet"
