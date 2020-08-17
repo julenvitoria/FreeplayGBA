@@ -3,11 +3,11 @@
 clear
 cd ~
 sudo apt update
-sudo apt upgrade
+sudo apt upgrade -y
 #Install packages that have been kept back. If not nothing happens...
-sudo apt install raspberrypi-kernel
-sudo apt install raspberrypi-kernel-headers
-sudo apt install libraspberrypi-bin libraspberrypi-dev libraspberrypi-doc libraspberrypi0 raspberrypi-bootloader
+sudo apt install raspberrypi-kernel -y
+sudo apt install raspberrypi-kernel-headers -y
+sudo apt install libraspberrypi-bin libraspberrypi-dev libraspberrypi-doc libraspberrypi0 raspberrypi-bootloader -y
 #Install subversion (SVN) for the normal functionality of github-downloader script
 sudo apt -y subversion
 #Install autoconf.cfg for sound on Mupen64Plus
