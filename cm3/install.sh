@@ -4,7 +4,7 @@ clear
 cd ~
 sudo apt update
 #Install packages that have been kept back. If not nothing happens...
-sudo apt install libraspberrypi-bin libraspberrypi-dev libraspberrypi-doc libraspberrypi0 raspberrypi-bootloader raspberrypi-kernel
+#sudo apt install libraspberrypi-bin libraspberrypi-dev libraspberrypi-doc libraspberrypi0 raspberrypi-bootloader raspberrypi-kernel
 #Install subversion (SVN) for the normal functionality of github-downloader script
 sudo apt -y subversion
 #Install autoconf.cfg for sound on Mupen64Plus
