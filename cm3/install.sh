@@ -3,6 +3,7 @@
 clear
 cd ~
 sudo apt update
+sudo apt upgrade
 #Install packages that have been kept back. If not nothing happens...
 sudo apt install raspberrypi-kernel
 sudo apt install raspberrypi-kernel-headers
