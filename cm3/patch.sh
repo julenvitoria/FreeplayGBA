@@ -9,3 +9,20 @@ sudo apt install raspberrypi-kernel raspberrypi-kernel-headers libraspberrypi-bi
 cd ~/Freeplay
 cd mk_arcade_joystick_rpi
 ./install.sh
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+echo "SHUTTING DOWN... PLEASE POWER ON BEFORE"
+sleep 1
+sudo poweroff
