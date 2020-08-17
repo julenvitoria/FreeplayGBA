@@ -2,7 +2,7 @@
 
 clear
 cd ~
-#Install subversion (SVN)
+#Install subversion (SVN) for the normal functionality of github-downloader script
 sudo apt update
 sudo apt -y subversion
 #Install autoconf.cfg for sound on Mupen64Plus
@@ -46,7 +46,7 @@ else
 fi
 
 #Install Temperature Indicator
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBATempIndicatorAddon/master/InstallTempIndicator.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-TempIndicatorAddon/master/InstallTempIndicator.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/InstallTempIndicator.sh
 if grep -q "InstallTempIndicator.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "InstallTempIndicator is in the gamelist.xml yet"
