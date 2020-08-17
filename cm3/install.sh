@@ -9,6 +9,7 @@ sudo apt install raspberrypi-kernel -y
 sudo apt install raspberrypi-kernel-headers -y
 sudo apt install libraspberrypi-bin libraspberrypi-dev libraspberrypi-doc libraspberrypi0 raspberrypi-bootloader -y
 #Install subversion (SVN) for the normal functionality of github-downloader script
+sudo apt update
 sudo apt -y subversion
 #Install autoconf.cfg for sound on Mupen64Plus
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-ConfigsRemaps/master/cm3/configs/all/autoconf.cfg>/opt/retropie/configs/all/autoconf.cfg
