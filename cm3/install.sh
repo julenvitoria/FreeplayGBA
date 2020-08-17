@@ -3,7 +3,7 @@
 clear
 cd ~
 sudo apt update
-#Install packages that have been kept back. If not nothing happens, only install them 
+#Install packages that have been kept back. If not nothing happens...
 sudo apt install libraspberrypi-bin libraspberrypi-dev libraspberrypi-doc libraspberrypi0 raspberrypi-bootloader raspberrypi-kernel
 #Install subversion (SVN) for the normal functionality of github-downloader script
 sudo apt -y subversion
