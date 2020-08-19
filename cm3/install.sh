@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-cd ~
+cd /home/pi
 sudo apt update
 sudo apt upgrade -y
 #Install packages that have been kept back. If not nothing happens...
@@ -23,11 +23,11 @@ else
 fi
 #Install multi_switch script
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
-chmod +x ~/scripts/multi_switch.sh
+chmod +x /home/pi/scripts/multi_switch.sh
 
 #Install github-downloader script
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/github-downloader.sh>/home/pi/scripts/github-downloader.sh
-chmod +x ~/scripts/github-downloader.sh
+chmod +x /home/pi/scripts/github-downloader.sh
 
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
@@ -101,6 +101,6 @@ if grep -q "ConfigRemaps.sh" /opt/retropie/configs/all/emulationstation/gamelist
 else
         sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/ConfigRemaps.sh</path>\n\t\t<name>Emulator Configs + Games Remaps</name>\n\t\t<desc>Script to install emulators configs and remaps for various games of various systems.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
-
+                
 #Restart EmulationStation
-~/scripts/multi_switch.sh --ES-RESTART
+/home/pi/scripts/multi_switch.sh --ES-RESTART
