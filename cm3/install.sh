@@ -95,7 +95,7 @@ fi
 
 #Install Configs and Remaps
 wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-ConfigsRemaps/master/cm3/ConfigsRemaps.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/ConfigRemaps.sh
-chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/ConfigRemaps.sh
 if grep -q "ConfigRemaps.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "Configs and Remaps is in the gamelist.xml yet"
 else
