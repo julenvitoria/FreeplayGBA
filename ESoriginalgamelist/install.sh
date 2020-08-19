@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~
+cd /home/pi
 if [ -d /home/pi/tmp ]; then
         sudo rm -R /home/pi/tmp
         mkdir /home/pi/tmp
@@ -9,7 +9,7 @@ else
 fi
 cd tmp
 #Downloading and copying emulators configs
-echo "Download and copy original retropie section gamelist.xml"
+echo "Downloading and copying original retropie section gamelist.xml..."
 sleep 2
 ~/scripts/github-downloader.sh https://github.com/julenvitoria/FreeplayGBA/blob/master/ESoriginalgamelist/gamelist.xml
 cp gamelist.xml /opt/retropie/configs/all/emulationstation/gamelists/retropie/
