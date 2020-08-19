@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-cd ~
+cd /home/pi
 if [ -d /home/pi/RetroPie/retropiemenu/Update-Addons ]; then
         echo "Directory update addons was created yet."
         echo "Updating Addons Menu..."
@@ -76,4 +76,4 @@ else
 fi
 
 #Restart EmulationStation
-~/scripts/multi_switch.sh --ES-RESTART
+/home/pi/scripts/multi_switch.sh --ES-RESTART
