@@ -93,5 +93,14 @@ else
         sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/N64HDTextures.sh</path>\n\t\t<name>Install N64 HD Textures</name>\n\t\t<desc>Script to install HD textures used with Mupen64Plus emulator.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
 fi
 
+#Install Configs and Remaps
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-ConfigsRemaps/master/cm3/ConfigsRemaps.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/ConfigRemaps.sh
+chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/N64HDTextures.sh
+if grep -q "ConfigRemaps.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
+        echo "Configs and Remaps is in the gamelist.xml yet"
+else
+        sudo sed -i 's|</gameList>|\t<game>\n\t\t<path>./Update-Addons/ConfigRemaps.sh</path>\n\t\t<name>Emulator Configs + Games Remaps</name>\n\t\t<desc>Script to install emulators configs and remaps for various games of various systems.</desc>\n\t\t<image></image>\n\t\t<playcount>0</playcount>\n\t\t<lastplayed>20180514T205700</lastplayed>\n\t</game>\n</gameList>|' /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml
+fi
+
 #Restart EmulationStation
 ~/scripts/multi_switch.sh --ES-RESTART
