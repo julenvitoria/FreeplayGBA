@@ -12,4 +12,4 @@ For Freeplay with zero:
 
     wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/zero/install.sh | bash
 
-NOTE: IT'S NECCESARY THAT YOUR GBA HAS INTERNET CONNECTION. THIS SCRIPT WORKS WITH ABSOLUTE ROUTES.
+NOTE: IT'S NECCESARY THAT YOUR GBA HAS INTERNET CONNECTION. THIS SCRIPT WORKS WITH ABSOLUTE PATHS.
