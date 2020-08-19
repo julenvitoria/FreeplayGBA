@@ -1,1 +1,1 @@
-wget -O- https://github.com/julenvitoria/FreeplayGBA/blob/master/ESoriginalgamelist/install.sh | bash && wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/cm3/install.sh | bash 
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/ESoriginalgamelist/install.sh | bash
