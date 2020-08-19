@@ -1,1 +1,1 @@
-wget -O- >/opt/retropie/configs/all/emulationstation/gamelists/retropie/
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/cm3/install.sh | bash
