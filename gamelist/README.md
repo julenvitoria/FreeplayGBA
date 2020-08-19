@@ -1,0 +1,1 @@
+wget -O- >/opt/retropie/configs/all/emulationstation/gamelists/retropie/
