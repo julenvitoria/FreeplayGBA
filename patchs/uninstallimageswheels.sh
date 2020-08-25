@@ -113,15 +113,12 @@ else
 fi
 
 #Create scripts directory if it isn't
-if [ -d /home/pi/scripts/ ]; then
-        echo "Directory scripts was created yet"
-else
-        echo "Creating scripts directory"
+if [ ! -d /home/pi/scripts/ ]; then
         mkdir /home/pi/scripts/
 fi
 
 #Install multi_switch script if it isn't
-if [ /home/pi/scripts/multi_switch.sh does not exist ]; then
+if [ ! -f /home/pi/scripts/multi_switch.sh ]; then
         wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
         chmod +x /home/pi/scripts/multi_switch.sh
 fi
