@@ -1,19 +1,6 @@
 #!/bin/bash
 
 clear
-
-#This section is for an image that I have
-if [ -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/wrally2.cfg" ]; then
-        rm -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/wrally2.cfg"
-fi
-if [ -f "/opt/retropie/configs/all/retroarch/config/FB Alpha/dmnfrnt.cfg" ]; then
-        rm -f "/opt/retropie/configs/all/retroarch/config/FB Alpha/dmnfrnt.cfg"
-fi
-if [ -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/dmnfrnt.cfg" ]; then
-        rm -f "/opt/retropie/configs/all/retroarch/config/FinalBurn Neo/dmnfrnt.cfg"
-fi
-#End of section
-
 cd /home/pi
 sudo apt update
 sudo apt upgrade -y
