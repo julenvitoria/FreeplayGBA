@@ -112,4 +112,21 @@ else
         echo "Wheel directory isn't in zxspectrum directory"
 fi
 
+#Create scripts directory if it isn't
+if [ -d /home/pi/scripts/ ]; then
+        echo "Directory scripts was created yet"
+else
+        echo "Creating scripts directory"
+        mkdir /home/pi/scripts/
+fi
+
+#Install multi_switch script if it isn't
+if [ /home/pi/scripts/multi_switch.sh does not exist ]; then
+        wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/multi_switch.sh>/home/pi/scripts/multi_switch.sh
+        chmod +x /home/pi/scripts/multi_switch.sh
+fi
+
+#Restart EmulationStation
+/home/pi/scripts/multi_switch.sh --ES-RESTART
+
 echo "Process finished!"
