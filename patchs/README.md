@@ -12,6 +12,6 @@ Here are various patchs:
 
     wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/patchs/uninstallgamescfg.sh | bash
 
-4-To uninstall launching images per game from our image:
+4-To delete launching images per game and wheels from our image:
 
     wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/patchs/uninstallimageswheels.sh | bash
