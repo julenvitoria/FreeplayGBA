@@ -14,4 +14,4 @@ Here are various patchs:
 
 4-To uninstall launching images per game from our image:
 
-    wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/patchs/uninstallimages.sh | bash
+    wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA/master/patchs/uninstallimageswheels.sh | bash
