@@ -49,7 +49,7 @@ else
 fi
 
 #Install Super Retroboy theme and launchings
-wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-SuperRetroBoyTheme/master/STBtheme.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/ThemePlusLaunchings.sh
+wget -O- https://raw.githubusercontent.com/julenvitoria/FreeplayGBA-SuperRetroBoyTheme/master/SRBtheme.sh>/home/pi/RetroPie/retropiemenu/Update-Addons/ThemePlusLaunchings.sh
 chmod +x /home/pi/RetroPie/retropiemenu/Update-Addons/SRBtheme.sh
 if grep -q "SRBtheme.sh" /opt/retropie/configs/all/emulationstation/gamelists/retropie/gamelist.xml ; then
         echo "SRBtheme is in the gamelist.xml yet"
